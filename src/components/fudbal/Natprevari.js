@@ -32,14 +32,14 @@ const Natprevari = () => {
         РЕЗУЛТАТИ
       </Header>
       <Label size='big'>
-      <ListaNatprevar natprevari={pretNat}  />
+        <ListaNatprevar natprevari={pretNat}  />
       </Label>
       <Divider />
       <Header inverted color='red' as='h2'>
         СЛЕДНИ НАТПРЕВАРИ
       </Header>
       <Label size='big'>
-      <ListaNatprevar natprevari={sledNat}  />
+        <ListaNatprevar natprevari={sledNat}  />
       </Label>
     </Segment>
   );

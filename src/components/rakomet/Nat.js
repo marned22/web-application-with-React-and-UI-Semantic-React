@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState, useEffect } from 'react';
 import NatprevariLista from './RezSled';
 import { Divider, Header, Label, Segment } from 'semantic-ui-react';

@@ -26,8 +26,8 @@ const Pocetna = () => {
               <Natprevari />
           </Grid.Column>
         </Grid.Row>
-    </Grid>
-       <Grid columns='equal' stackable>
+      </Grid>
+      <Grid columns='equal' stackable>
         <Grid.Row stretched>
           <Grid.Column>
             <Segment fluid inverted tertiary color='red'>
