@@ -1,70 +1,159 @@
-# Getting Started with Create React App
+# СПОРТ ВО БИТОЛА (Sports in Bitola)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based web application showcasing sports teams and activities in Bitola, Macedonia. The website features information about football (ФК Пелистер), handball (РК Еурофарм Пелистер), basketball (КК Пелистер), and the fan group Чкембари.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- **Multi-sport Coverage**: Football, Handball, Basketball teams information
+- **Team Rosters**: Complete player profiles with statistics and photos
+- **Match Results & Fixtures**: Current and upcoming match schedules
+- **League Tables**: Live standings for different competitions
+- **News Section**: Latest sports news and updates with local storage
+- **Fan Group Information**: Dedicated section for Чкембари supporters
+- **Responsive Design**: Mobile-friendly interface using Semantic UI React
 
-### `npm start`
+## 🏗️ Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+src/
+├── components/          # Reusable components
+│   ├── Navbar.js       # Main navigation with hamburger menu
+│   ├── Footer.js       # Site footer
+│   ├── fudbal/         # Football-specific components
+│   └── rakomet/        # Handball-specific components
+├── pages/              # Main page components
+│   ├── pocetna/        # Home page
+│   ├── fudbal/         # Football section (ФК Пелистер)
+│   ├── rakomet/        # Handball section (РК Еурофарм Пелистер)
+│   ├── kosarka/        # Basketball section (КК Пелистер)
+│   └── ckembari/       # Fan group section
+├── novosti/            # News management with local storage
+├── App.js             # Main application component with routing
+└── index.js           # Application entry point
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+public/
+├── images/             # Static images for teams and players
+├── *.json             # Data files (rezultati.json, sledni.json, tabela*.json)
+├── index.html         # HTML template
+└── favicon.ico        # Site favicon
+```
 
-### `npm test`
+## 📚 Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React** (^18.x) - Frontend framework
+- **React Router DOM** - Client-side routing for navigation
+- **Semantic UI React** - UI component library for responsive design
+- **JavaScript ES6+** - Programming language
+- **CSS3** - Custom styling
+- **JSON** - Data storage for match results, fixtures, and tables
+- **Local Storage** - Browser storage for news management
 
-### `npm run build`
+## 📋 Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚙️ Setup and Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/marned22/web-application-with-React-and-UI-Semantic-React.git
+   cd web-application-with-React-and-UI-Semantic-React
+   ```
 
-### `npm run eject`
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
+   The app will open at [http://localhost:3000](http://localhost:3000)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🌐 Available Routes
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `/` - Home page with latest news and match schedules
+- `/fudbal` - Football team (ФК Пелистер) information
+- `/fudbal/rezultati` - Football match results
+- `/fudbal/sledni` - Upcoming football matches
+- `/fudbal/tabela` - Football league table
+- `/fudbal/sostav` - Football team roster
+- `/rakomet` - Handball team (РК Еурофарм Пелистер) information
+- `/rakomet/rezultati` - Handball match results
+- `/rakomet/sledni` - Upcoming handball matches
+- `/rakomet/tabela` - Handball league table
+- `/rakomet/sostav` - Handball team roster
+- `/kosarka` - Basketball team information
+- `/ckembari` - Fan group information
 
-## Learn More
+## 🏃‍♂️ Available Scripts
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App (irreversible)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📊 Data Management
 
-### Code Splitting
+The application uses:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **JSON files** in the `public` directory for sports data:
+  - `rezultati.json` / `rezultatiR.json` - Match results
+  - `sledni.json` / `sledniR.json` - Upcoming fixtures
+  - `tabela*.json` - League tables
+  - `novosti.json` - News articles
 
-### Analyzing the Bundle Size
+- **Local Storage** for news management (add, edit, delete news)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🎨 UI Components (Semantic UI React)
 
-### Making a Progressive Web App
+- **Navigation**: Menu, Segment for responsive navigation
+- **Data Display**: Table, Card, Image, Header for content presentation
+- **Layout**: Grid, Divider, Container for responsive layouts
+- **Interactive**: Button, Modal, Accordion, Tab for user interactions
+- **Typography**: Header with various sizes and styling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 🌐 Language Support
 
-### Advanced Configuration
+The application is primarily in Macedonian (Cyrillic script):
+- Team names and content in Macedonian
+- Navigation and UI elements in Macedonian
+- News section supports Macedonian content
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📱 Responsive Features
 
-### Deployment
+- **Mobile Navigation**: Hamburger menu for mobile devices
+- **Responsive Tables**: Scroll-friendly tables on small screens
+- **Flexible Grid**: Semantic UI Grid system for layout adaptation
+- **Touch-friendly**: Optimized for mobile interactions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 🔧 Key Features Implementation
 
-### `npm run build` fails to minify
+- **Dynamic Routing**: React Router for seamless navigation
+- **Data Fetching**: Fetch API for loading JSON data
+- **State Management**: React hooks (useState, useEffect)
+- **Component Reusability**: Shared components across different sports sections
+- **News Management**: Full CRUD operations with local storage persistence
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+- [Create React App](https://github.com/facebook/create-react-app) - Project bootstrapping
+- [Semantic UI React](https://react.semantic-ui.com/) - UI component library
+- [React Router](https://reactrouter.com/) - Routing solution
+- Sports teams: ФК Пелистер, РК Еурофарм Пелистер, КК Пелистер
+- Fan group: Чкембари
+
+---
+
+**Note**: This is a frontend-only application that uses static JSON files and local storage for data management. No backend server or database is required.
